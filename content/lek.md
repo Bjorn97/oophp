@@ -1,7 +1,7 @@
 Lek
 ===========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/lek.md`.
+
 
 Här kan du länka till dina egna lek-sidor, inom eller utom din me-sida.
 

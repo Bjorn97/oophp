@@ -10,9 +10,9 @@ use PHPUnit\Framework\TestCase;
 class ExampleTest extends TestCase
 {
     /**
-     * Just assert something is true.
-     */
-    public function testTrue()
+    * Just assert something is true.
+    */
+    public function testempty()
     {
         $this->assertTrue(true);
     }

@@ -1,0 +1,74 @@
+<?php
+
+namespace bjan\Dice100;
+
+class DicePlayers
+{
+    protected $playerroll;
+    protected $total;
+    protected $playerscore;
+
+    public function __construct()
+    {
+        $this->playerscore = 0;
+        $this->total = 0;
+        $this->playerroll = 0;
+    }
+    public function stop()
+    {
+        $this->playerscore += $this->total;
+        $this->total = 0;
+    }
+
+    public function roll()
+    {
+        $this->playerroll = rand(1,6);
+        if ($this->playerroll == 1) {
+            $this->total = 0;
+            return 1;
+        }else {
+            $this->total += $this->playerroll;
+            if ($this->total >= 100) {
+                return 2;
+            }
+            return 0;
+        }
+    }
+    public function reset()
+    {
+        $this->playerroll= 0;
+        $this->total = 0;
+        $this->playerscore = 0;
+    }
+
+    public function setplayerroll($playerroll)
+    {
+        $this->playerroll = $playerroll;
+    }
+
+    public function getplayerroll()
+    {
+        return $this->playerroll;
+    }
+
+    public function setplayerscore($playerscore)
+    {
+        $this->playerscore = $playerscore;
+    }
+
+    public function getplayerscore()
+    {
+        return $this->playerscore;
+    }
+    
+    public function setplayertotal($total)
+    {
+        $this->total = $total;
+    }
+
+    public function gettotal()
+    {
+        return $this->total;
+    }
+}
+

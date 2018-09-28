@@ -5,6 +5,7 @@ namespace bjan\Dice100;
 use bjan\Dice100\DicePlayers;
 
 use bjan\Dice100\DiceComputer;
+
 /**
 * Showing message Hello World, rendered within the standard page layout.
  */

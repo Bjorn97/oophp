@@ -14,7 +14,7 @@ class DiceComputer extends DicePlayers
     }
     public function turn()
     {
-        while (rand(1,4) != 1) {
+        while (rand(1, 4) != 1) {
             $this->roll();
         }
         $this->playerscore += $this->total;
